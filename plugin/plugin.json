@@ -1,0 +1,30 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "author": {
+    "email": "adnananik301@gmail.com",
+    "name": "Adnan"
+  },
+  "description": "Connect ChatGPT to a local Caido instance through the Caido MCP Server for authorized HTTP traffic analysis, replay, scope review, and findings workflows.",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "capabilities": [],
+        "category": "Security",
+        "defaultPrompt": "Connect to my local Caido instance and help me analyze authorized traffic. Start by checking the connection and current project, then summarize relevant captured requests without sending traffic unless I explicitly ask.",
+        "developerName": "Adnan",
+        "displayName": "Caido Bridge",
+        "longDescription": "Connects to the locally running Caido MCP Server. Inspect and filter captured HTTP traffic, review scope, analyze requests and responses, run controlled Replay actions, and organize findings. Requires local setup and interactive Caido authorization.",
+        "shortDescription": "Work with local Caido traffic"
+      }
+    }
+  },
+  "keywords": [
+    "caido",
+    "web-security",
+    "proxy",
+    "mcp",
+    "bug-bounty"
+  ],
+  "name": "caido-bridge",
+  "version": "0.1.0"
+}
